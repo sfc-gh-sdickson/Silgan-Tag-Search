@@ -14,16 +14,6 @@ This Streamlit application provides various tools for searching tags and leverag
 - Access to Snowflake Cortex features
 - Streamlit in Snowflake enabled
 
-## File Structure
-
-your_application_folder/ │
-├── streamlit_app.py # Main application file
-├── Snowflake.svg # Snowflake logo
-├── environment.yml # Env Config File  
-└── Silgan_Holdings_logo.svg # Silgan Holdings logo
-
-Please make sure these are copied into the root application folder
-
 ## Deployment Instructions
 
 ### 1. Create Streamlit Application in Snowflake
