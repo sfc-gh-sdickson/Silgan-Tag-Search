@@ -1,6 +1,5 @@
 # Tag Search & Gen AI Tools Application
 
-![Snowflake Logo](Snowflake.svg)
 <img src="Snowflake.svg" width="100">
 
 ## Overview
@@ -17,7 +16,13 @@ This Streamlit application provides various tools for searching tags and leverag
 
 ## File Structure
 
-your_application_folder/ │ ├── streamlit_app.py # Main application file ├── Snowflake.svg # Snowflake logo └── Silgan_Holdings_logo.svg # Silgan Holdings logo
+your_application_folder/ │
+├── streamlit_app.py # Main application file
+├── Snowflake.svg # Snowflake logo
+├── environment.yml # Env Config File  
+└── Silgan_Holdings_logo.svg # Silgan Holdings logo
+
+Please make sure these are copied into the root application folder
 
 ## Deployment Instructions
 
@@ -28,13 +33,15 @@ your_application_folder/ │ ├── streamlit_app.py # Main application file 
 3. Click "Create Streamlit App"
 4. Fill in the following details:
    - Application Name: `tag_search_genai_tools`
-   - Warehouse: Select appropriate warehouse
-   - Database: Choose target database
-   - Schema: Select schema
+   - Warehouse: Select appropriate warehouse - Running on XS Warehouee will work fine
+   - Database: Choose target database(ex. TAG_DB)
+   - Schema: Select schema(ex. TAG_SCHEMA)
 
 ### 2. Upload Supporting Files
 
 1. In the Streamlit application directory:
+   - Upload `streamlit_app.py`
+   - Upload `environment.yml`
    - Upload `Snowflake.svg`
    - Upload `Silgan_Holdings_logo.svg`
    - These files should be in the same directory as your main application
