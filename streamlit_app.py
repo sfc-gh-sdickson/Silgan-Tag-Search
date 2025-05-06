@@ -12,7 +12,7 @@ st.markdown(
     """
           <style type="text/css">
           [data-testid=stSidebar] {
-                    background-color: rgb(129, 164, 182);
+                    background-color: #e4f6ff;
                     color: #FFFFFF;
           }
           </style>
@@ -21,7 +21,7 @@ st.markdown(
 )
 
 session = get_active_session()
-   
+
 def get_snowflake_session():
     """Create or get cached Snowflake session."""
     return session  # Assuming 'session' is created elsewhere in the app
@@ -31,19 +31,19 @@ def toolsapp():
 
         # Load your SVG file
 
-        svg_content = read_svg("Snowflake.svg") 
+        svg_content = read_svg("Snowflake.svg")
         svg_content3 = read_svg("Silgan_Holdings_logo.svg")
-        
+
         # Display the animated SVG
 
-        st.image(svg_content, width=100) 
+        st.image(svg_content, width=100)
         st.image(svg_content3, width=300)
         st.header("Welcome to the Tag Search & Gen AI Tools App!")
-    
+
 def tsearch():
     with st.container():
         svg_content3 = read_svg("Silgan_Holdings_logo.svg")
-        # Display the animated SVG        
+        # Display the animated SVG
         st.image(svg_content3, width=300)
         st.header("Search for Tags")
         entered_text = st.text_input(
@@ -135,7 +135,7 @@ def read_svg(path):
         svg_string = f.read()
 
     return svg_string
-    
+
 page_names_to_funcs = {
     "Tools App": toolsapp,
     "Tag Search": tsearch,
